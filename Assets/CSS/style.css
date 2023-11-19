@@ -1,5 +1,72 @@
 body{
+
+    line-height: 1.5;
     background-color: rgb(75, 75, 75);
     color: rgb(252, 81, 252);
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin-bottom: 0.625rem;
+    /* color: var(--heliotrope); */
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+header {
+    width: 96%;
+    margin: 0 auto;
+    padding: 2.5rem;
+    text-align: center;
+}
+
+main {
+    width: 96%;
+    margin: 2rem auto;
+}
+
+main section{
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+}
+
+main section div{
+    flex: 1 0 100%;
+    padding: 1.5rem;
+}
+
+main section div footer{
+    display: flex;
+    padding: 2rem;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+
+    main section div {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    main section div:last-child{
+        flex-grow: 1;
+    }
+} 
+
+@media screen and (min-width: 992px){
+    header{
+        width: 75%;
+    }
+
+    main section div{
+        flex: 0 0 33%;
+        max-width: 33%;
+    }
 }
 
