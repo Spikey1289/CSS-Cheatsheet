@@ -1,5 +1,4 @@
 body{
-
     line-height: 1.5;
     background-color: rgb(75, 75, 75);
     color: rgb(252, 81, 252);
@@ -34,11 +33,41 @@ main section{
 main section div{
     flex: 1 0 100%;
     padding: 1.5rem;
+    transition: flex-basis 500ms linear;
 }
 
-main section div footer{
+main section div figure{
     display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     padding: 2rem;
+    min-height: 100%;
+    outline: 2px dashed white;
+    border-radius: .5rem;
+}
+
+main section div figure h2 {
+    position: relative;
+    margin: -4rem 0 1.5rem 0;
+    padding: .5rem 1.5rem;
+    border: 2px solid white;
+    background-color: rgb(75, 75, 75);
+    border-radius: 1rem;
+}
+
+main section div figure pre{
+    white-space: pre-wrap;
+    overflow: auto;
+    padding: 1.5rem;
+    color: white;
+    border-radius: 1rem;
+    background-image: linear-gradient(
+        rgba(232, 102, 236, 0.1) 0%,
+        rgba(232, 102, 236, 0.6) 100%
+    );
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
 }
 
 footer{
